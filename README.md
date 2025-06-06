@@ -40,7 +40,8 @@ The supervisor agent dynamically routes user queries to the most appropriate age
 ## Project Structure
 
 \`\`\`
-MEDICAL MULTI AGENT/
+
+Multi-Agent-Medical-Chatbot/
 
 ├── Agents/
 │   ├── __init__.py
