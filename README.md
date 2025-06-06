@@ -1,5 +1,7 @@
 # Multi-Agent-Medical-Chatbot
 
+![247496cc-3d4d-408c-8843-b4534379eca4](https://github.com/user-attachments/assets/7f457bb6-151b-4c8c-991a-6b0f46a86c18)
+
 
 
 A comprehensive, modular healthcare chatbot system built using **LangGraph**, designed to deliver intelligent, context-aware, and collaborative medical assistance. This project leverages a supervisor-agent architecture, with each agent specializing in a key healthcare domain. The system supports both command-line and web-based interactions, robust state management, and detailed logging for traceability and debugging.
