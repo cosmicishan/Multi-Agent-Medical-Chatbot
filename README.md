@@ -61,15 +61,8 @@ Multi-Agent-Medical-Chatbot/
 │   ├── __init__.py
 │   └── state.py
 ├── medi-stream-chat/
-├── .env
-├── .gitignore
-├── .python-version
-├── app.py
-├── main.py
-├── pyproject.toml
-├── README.md
-├── test.ipynb
-└── uv.lock
+│   ├── next.js code
+
 
 ```
 
