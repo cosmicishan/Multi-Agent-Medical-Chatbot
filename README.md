@@ -41,34 +41,35 @@ The supervisor agent dynamically routes user queries to the most appropriate age
 
 \`\`\`
 MEDICAL MULTI AGENT/
+
 ├── Agents/
 │   ├── __init__.py
-│   ├── crisis_agent.py          # Handles emergencies & crisis escalation
-│   ├── guidance_agent.py       # Provides healthcare guidance & follow-up
-│   ├── research_agent.py       # Drug info, research, interactions
-│   ├── supervisor_agent.py     # Orchestrates agent workflow
-│   └── symptoms_agent.py       # Symptom analysis & triage
+│   ├── crisis_agent.py
+│   ├── guidance_agent.py
+│   ├── research_agent.py
+│   ├── supervisor_agent.py
+│   └── symptoms_agent.py
 ├── Graph/
 │   ├── __init__.py
-│   └── main_graph.py           # LangGraph workflow & state transitions
+│   └── main_graph.py
 ├── Loggers/
 │   ├── __init__.py
-│   ├── debugging.log           # Log file for agent interactions
-│   └── logger_config.py        # Logging configuration
+│   ├── debugging.log
+│   └── logger_config.py
 ├── State/
 │   ├── __init__.py
-│   └── state.py                # Conversation state management
-├── medi-stream-chat/           # Frontend (Next.js/React)
-│   └── ...                    # Frontend source files
-├── .env                       # Environment variables
+│   └── state.py
+├── medi-stream-chat/
+├── .env
 ├── .gitignore
 ├── .python-version
-├── app.py                     # FastAPI backend API
-├── main.py                    # Command-line interface entrypoint
-├── pyproject.toml             # Python dependencies
+├── app.py
+├── main.py
+├── pyproject.toml
 ├── README.md
-├── test.ipynb                 # Example/test notebook
-└── uv.lock                    # Dependency lock file
+├── test.ipynb
+└── uv.lock
+
 \`\`\`
 
 ---
