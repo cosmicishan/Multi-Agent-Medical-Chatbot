@@ -39,7 +39,7 @@ The supervisor agent dynamically routes user queries to the most appropriate age
 
 ## Project Structure
 
-\`\`\`
+```
 
 Multi-Agent-Medical-Chatbot/
 
@@ -71,7 +71,7 @@ Multi-Agent-Medical-Chatbot/
 ├── test.ipynb
 └── uv.lock
 
-\`\`\`
+```
 
 ---
 
@@ -93,32 +93,18 @@ Agents communicate via the LangGraph workflow defined in \`Graph/main_graph.py\`
 
 1. **Clone the Repository**
 
-   \`\`\`bash
+   ```bash
    git clone <your-repo-url>
    cd MEDICAL\ MULTI\ AGENT
-   \`\`\`
+   ```
 
-2. **Create and Activate Virtual Environment**
+2. Create a virtual environment:
 
-   \`\`\`bash
-   python -m venv .venv
-   source .venv/bin/activate
-   \`\`\`
-
-3. **Install Python Dependencies**
-
-   \`\`\`bash
-   uv sync
-   \`\`\`
-
-4. **Configure Environment Variables**
-
-   - Copy \`.env.example\` to \`.env\` (if available) and fill in your API keys:
-
-     \`\`\`
-     OPENAI_API_KEY=your_openai_key
-     MED_API_KEY=your_medical_api_key
-     \`\`\`
+  ```bash
+  # Create and activate a virtual environment using uv
+  uv venv
+  source .venv/bin/activate  # On Windows: .venv\Scripts\activate.bat or .venv\Scripts\Activate.ps1
+  ```
 
 ---
 
@@ -128,9 +114,9 @@ Agents communicate via the LangGraph workflow defined in \`Graph/main_graph.py\`
 
 Run the chatbot in CLI mode:
 
-\`\`\`bash
+```bash
 python main.py
-\`\`\`
+```
 
 - Interact directly with the multi-agent system from your terminal.  
 - Ideal for testing, debugging, or headless deployments.
@@ -141,9 +127,9 @@ python main.py
 
 Start the FastAPI server:
 
-\`\`\`bash
+```bash
 python app.py
-\`\`\`
+```
 
 - Exposes RESTful endpoints for chat, state, and agent routing.  
 - Integrates with the frontend and supports external API calls.
@@ -154,13 +140,13 @@ python app.py
 
 Launch the web interface:
 
-\`\`\`bash
+```bash
 cd medi-stream-chat
 npm install
 npm audit fix          # Optional: fix vulnerabilities
 npm run build          # Optional: build for production
 npm run dev            # Start the development server (default: http://localhost:3000)
-\`\`\`
+```
 
 - Next.js/React-based UI for user-friendly chat experience.  
 - Connects to the FastAPI backend for real-time multi-agent responses.
@@ -171,13 +157,13 @@ npm run dev            # Start the development server (default: http://localhost
 
 Define the following in your \`.env\` file:
 
-\`\`\`
+```
 SERPER_API_KEY = ""
 GROQ_API_KEY = ""
 MODEL_NAME = "llama-3.3-70b-versatile"
 TAVILY_API_KEY = ""
 GOOGLE_API_KEY = ""
-\`\`\`
+```
 
 - Required for LLM access and medical data APIs.  
 
